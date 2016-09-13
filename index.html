@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Burger Icon Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<h1>Demo for interactive menu burger icons</h1>
+
+<body>
+    <div id="menuX">
+        <span id="bar1"></span>
+        <span id="bar2"></span>
+        <span id="bar3"></span>
+    </div>
+    <div id="menuRotate">
+        <span id="bar1R"></span>
+        <span id="bar2R"></span>
+        <span id="bar3R"></span>
+    </div>
+    <style>
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    h1 {
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        background-color: rgb(50, 80, 90);
+        color: #fff;
+        width: 100%;
+        height: 100px;
+        padding-top: 50px;
+        text-align: center;
+        margin: auto;
+        top: 0;
+        display: block;
+    }
+    
+    #menuX {
+        cursor: pointer;
+        background-color: #101316;
+        border: 1px solid black;
+        width: 50px;
+        position: fixed;
+        height: 50px;
+        border-radius: 100%;
+        left: 30%;
+        top: 40%;
+        transition: all .3s;
+        margin: auto;
+        padding: 0;
+        z-index: 2;
+    }
+    
+    #menuX:hover {
+        background-color: #fff;
+        border: 1px solid red;
+    }
+    
+    #menuX:hover #bar1,
+    #menuX:hover #bar2,
+    #menuX:hover #bar3 {
+        background-color: red;
+    }
+    
+    #menuRotate:hover {
+        background-color: #fff;
+        border: 1px solid #38485f;
+    }
+    
+    #menuRotate:hover #bar1R,
+    #menuRotate:hover #bar2R,
+    #menuRotate:hover #bar3R {
+        background-color: #38485f;
+    }
+    
+    #bar1,
+    #bar2,
+    #bar3 {
+        height: 2px;
+        position: absolute;
+        background-color: #fff;
+        transition: all .3s;
+        left: 15px;
+        width: 20px;
+    }
+    
+    #bar1 {
+        top: 16px;
+    }
+    
+    #bar2 {
+        top: 24px;
+    }
+    
+    #bar3 {
+        top: 32px;
+    }
+    
+    #menuRotate {
+        border: 1px solid black;
+        cursor: pointer;
+        background-color: #101316;
+        width: 50px;
+        position: fixed;
+        height: 50px;
+        border-radius: 100%;
+        left: 60%;
+        top: 40%;
+        transition: all .3s;
+        margin: auto;
+        padding: 0;
+        z-index: 2;
+    }
+    
+    #bar1R,
+    #bar2R,
+    #bar3R {
+        height: 2px;
+        position: absolute;
+        background-color: #fff;
+        transition: all .3s;
+        left: 15px;
+        width: 20px;
+    }
+    
+    #bar1R {
+        top: 16px;
+    }
+    
+    #bar2R {
+        top: 24px;
+    }
+    
+    #bar3R {
+        top: 32px;
+    }
+    
+    .rotate {
+        transform: rotate(90deg);
+    }
+    </style>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
